@@ -18,3 +18,8 @@
     opacity: 0.8;
     z-index: -1;
 }
+
+.player-card img {
+    width: 264px;
+    height: 204px;
+}
