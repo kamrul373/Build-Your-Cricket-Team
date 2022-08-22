@@ -6,27 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Build Your Own Team</title>
+    <!-- custom css -->
     <link rel="stylesheet" href="style.css">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-zinc-900">
+    <!-- header area starts  -->
     <header class="py-48 font-serif header-area">
         <h1 class="text-white text-6xl text-center font-extrabold">Build Your Own Team</h1>
         <img src="images/ball.png" alt="ball" class="w-32 absolute top-100 right-0 ">
     </header>
+    <!-- header area ends  -->
     <main>
         <section class="mt-12 w-9/12 mx-auto flex gap-8 py-8">
             <div class="player-area w-9/12 grid grid-cols-3 gap-12" id="players-area">
-
+                <!-- Playars will show here dynamically -->
             </div>
-            <aside class="sidebar-area w-1/4 border-4">
-                <h1 class="text-white">Aside</h1>
+            <!-- Sidebar starts -->
+            <aside class="sidebar-area w-1/4 mx-4">
+                <div class="selected-player-area bg-black shadow-xl h-[24rem] px-8">
+                    <h1 class="text-white text-2xl text-center pt-8 pb-4 border-b-4 border-orange-500 ">
+                        Select V</h1>
+                    <ol id="selected-player" class="text-gray-600" type="1">
+                        <!-- selected player will display here -->
+                    </ol>
+                </div>
             </aside>
+            <!-- Sidebar ends -->
         </section>
     </main>
-
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- common functions script -->
     <script src="js/functions.js"></script>
+    <!-- script.js -->
     <script src="js/script.js"></script>
 </body>
 
