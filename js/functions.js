@@ -82,4 +82,7 @@ function getInnerText(elementId) {
 function setInnerText(elementId, value) {
     document.getElementById(elementId).innerText = value;
 }
-
+function gettotal(managerExpense, coachExpense, playersExpense) {
+    const total = managerExpense + coachExpense + playersExpense;
+    return total;
+}

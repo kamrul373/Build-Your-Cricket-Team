@@ -21,3 +21,25 @@ document.getElementById("calculate").addEventListener("click", function (event) 
     // setting players expense in frontend
     setInnerText("players-expense", playersTotalExpense);
 });
+// total expense calculation 
+document.getElementById("calculate-total").addEventListener("click", function (event) {
+
+    // getting expenses amount 
+    let managerExpense = getInputValueById("manager");
+    managerExpense = parseInt(managerExpense);
+
+    let coachExpense = getInputValueById("coach");
+    coachExpense = parseInt(coachExpense);
+
+    let playersExpense = getInnerText("players-expense");
+    playersExpense = parseInt(playersExpense);
+
+    if (isNaN(managerExpense) || isNaN(coachExpense) || isNaN(playersExpense)) {
+        return alert("Please fill the empty fields by a valid number");
+    }
+
+    // total calculation
+    const totalExpense = gettotal(managerExpense, coachExpense, playersExpense);
+    setInnerText("total", totalExpense);
+
+});
