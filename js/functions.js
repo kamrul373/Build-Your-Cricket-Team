@@ -64,4 +64,22 @@ function displaySelectedPlayers(playerinfo) {
     selectedPlayerContainer.append(li);
 }
 
+// common functions 
+
+function getNodeLength(element) {
+    return document.querySelectorAll(element).length
+}
+function getInputValueById(elementId) {
+    let value = document.getElementById(elementId).value;
+    return parseInt(value);
+}
+function gettotalExpenseOfPlayers(numberOfPlayers, singlePlayerExpense) {
+    return numberOfPlayers * singlePlayerExpense;
+}
+function getInnerText(elementId) {
+    return document.getElementById(elementId).innerText;
+}
+function setInnerText(elementId, value) {
+    document.getElementById(elementId).innerText = value;
+}
 
