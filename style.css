@@ -1,3 +1,4 @@
+/* header area */
 .header-area {
     background: url("images/banner/banner.jpg");
     background-repeat: no-repeat;
@@ -19,7 +20,21 @@
     z-index: -1;
 }
 
+/* player card */
 .player-card img {
     width: 264px;
     height: 204px;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
 }
